@@ -31,7 +31,7 @@ extern "C" {
 #endif
 
 
-/* includes definitions and functions from sample  #include "../exdll/exdll.h" */
+/* includes definitions and functions from sample  #include "exdll.h" */
 
 
 /* actual stack item */
