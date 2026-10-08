@@ -1,0 +1,9 @@
+* text=auto
+
+*.bz2 binary
+*.lzma binary
+*.tar binary
+*.tgz binary
+*.tlz binary
+
+/README.md export-ignore
