@@ -22,6 +22,8 @@ jobs:
 
       - name: Build plug-in
         uses: nsis-dev/release-package@489fbb8cb19ff58dfd029c50b5cc0c5d693e576f # v0.4.1
+        env:
+          CL: /D_CRT_NO_TIME_T
         with:
           name: untgz
           sources: |
@@ -47,4 +49,5 @@ jobs:
             Contrib/untgz/zlib/inftrees.c
             Contrib/untgz/zlib/zutil.c
           strict: false
+          targets: x86-ansi
           release: ${{ github.event_name == 'release' }}
